@@ -143,9 +143,19 @@ def workflow(path):
 # print(workflow("C:/Users/Victor Wornu/Documents/fast ai learning/venv/code/train_images/1001742395.jpg"))
 # print("APP WORKS!!!")
 
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=["*"],
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://cassava-leaf-detector-reformed.netlify.app",
+        "http://localhost:5173",
+        "http://localhost:3000"
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
 )
