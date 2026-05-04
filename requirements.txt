@@ -1,0 +1,9 @@
+fastapi
+fastai
+joblib
+uvicorn
+torch
+torchvision
+numpy<2
+ipython
+scikit-learn==1.6.1
